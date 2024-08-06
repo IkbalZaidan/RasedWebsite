@@ -19,6 +19,11 @@ Version: 1.0
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 
+:root{
+   --primary-color:#b2022f
+}
+
+
 html,
 body,
 div,
@@ -235,7 +240,7 @@ a {
 }
 
 a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 h1,
@@ -305,7 +310,7 @@ h6 {
 }
 
 .title-decor span {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .title-decor:before {
@@ -316,7 +321,7 @@ h6 {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
 }
 
 .slogan {
@@ -420,7 +425,7 @@ body.page-loaded .preloader-cover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   animation: cube-loader 2.76s infinite linear both;
   transform-origin: 100% 100%;
 }
@@ -513,7 +518,7 @@ header:before {
   left: -100%;
   width: 100%;
   height: 100vh;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   transition: none;
   z-index: 1;
 }
@@ -574,7 +579,7 @@ header:after {
 }
 
 .nav-list li a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .nav-list li a i {
@@ -582,11 +587,11 @@ header:after {
 }
 
 .nav-list li.menu-active a {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .nav-list li.menu-active a i {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .nav-list li.dropdown ul {
@@ -610,11 +615,11 @@ header:after {
 }
 
 .nav-list li.dropdown ul li a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .nav-list li.dropdown ul li.active a {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
@@ -778,7 +783,7 @@ header:after {
   width: 60px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid #f23849;
+  border-bottom: 1px solid var(--primary-color);
   background-color: transparent;
   border-color: transparent;
   font-family: 'Righteous';
@@ -794,7 +799,7 @@ header:after {
 .header-right .search-form__field:focus {
   width: 270px;
   border-color: transparent;
-  border-bottom-color: #f23849;
+  border-bottom-color: var(--primary-color);
 }
 
 .header-right .search-form__submit {
@@ -803,14 +808,14 @@ header:after {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  color: #f23849;
+  color: var(--primary-color);
   position: relative;
   z-index: 2;
   border: none;
 }
 
 .header-right .search-form__submit:hover {
-  background-color: #f23849;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -834,7 +839,7 @@ header:after {
 .header-cont li i {
   margin-right: 15px;
   font-size: 14px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*--------------------- HEADER-FITNESS ---------------------*/
@@ -864,7 +869,7 @@ header:after {
 }
 
 .header-fitness .top-panel-row .header-cont a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .header-fitness .top-panel-center {
@@ -1172,7 +1177,7 @@ textarea {
   font-family: "Poppins", sans-serif;
   background-color: #30343c;
   border: 2px solid transparent;
-  border-bottom-color: #f23849;
+  border-bottom-color: var(--primary-color);
   color: #fff;
   font-weight: 400;
   transition: .25s ease-in;
@@ -1262,16 +1267,16 @@ textarea::placeholder {
   height: 40px;
   text-align: center;
   color: #fff;
-  border: 2px solid #f23849;
+  border: 2px solid var(--primary-color);
   flex: 0 0 auto;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   font-size: 14px;
 }
 
 .search-form .btn-form:hover,
 .subscribe-form .btn-form:hover {
   background-color: transparent;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .search-form .inp-form::-moz-placeholder,
@@ -1335,7 +1340,7 @@ textarea::placeholder {
 .checkbox-cover p:before {
   content: '';
   display: inline-block;
-  border: 1px solid #f23849;
+  border: 1px solid var(--primary-color);
   width: 26px;
   height: 26px;
   line-height: 24px;
@@ -1345,7 +1350,7 @@ textarea::placeholder {
   top: -2px;
   right: 0;
   text-align: center;
-  color: #f23849;
+  color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -1362,7 +1367,7 @@ textarea::placeholder {
 
 .checkbox-cover input:checked+p:before {
   content: '\f00c';
-  background-color: #f23849;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -1387,7 +1392,7 @@ textarea::placeholder {
 }
 
 #message .error_message {
-  color: #f23849;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 18px;
 }
@@ -1508,7 +1513,7 @@ footer .social-list li {
 }
 
 .footer-menu li.active a {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .footer-menu li a {
@@ -1573,7 +1578,7 @@ footer .social-list li {
 }
 
 .footer-fitness .footer-bottom .copyright a {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .footer-fitness .footer-bottom .copyright a:hover {
@@ -1719,8 +1724,8 @@ footer .social-list li {
 .btn {
   font-size: 16px;
   padding: 11px 40px 10px;
-  border: 2px solid #f23849;
-  background-color: #f23849;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -1733,7 +1738,7 @@ footer .social-list li {
 
 .btn:hover {
   background-color: transparent;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*--------------------- SOCIAL LIST ---------------------*/
@@ -1758,7 +1763,7 @@ footer .social-list li {
 }
 
 .social-list a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*----------------------- TO-TOP -----------------------*/
@@ -1778,7 +1783,7 @@ footer .social-list li {
 }
 
 .to-top:hover {
-  background-color: #f23849;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -1844,7 +1849,7 @@ footer .social-list li {
 
 .slider-navigation .slick-dots li:hover button,
 .slider-navigation .slick-dots li.slick-active button {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .slider-navigation .slick-dots li button {
@@ -1875,7 +1880,7 @@ footer .social-list li {
 }
 
 .slider-navigation .slick-arrow svg {
-  fill: #f23849;
+  fill: var(--primary-color);
   transition: .25s ease-in;
 }
 
@@ -1984,7 +1989,7 @@ footer .social-list li {
 }
 
 .crossfit-slider-lite .crossfit-slide .title span {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .scene {
@@ -2077,7 +2082,7 @@ footer .social-list li {
   font-size: 16px;
   margin-right: 10px;
   margin-top: -2px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .post-item-cover .meta .post-by a {
@@ -2160,7 +2165,7 @@ blockquote:before {
   top: 30px;
   left: 30px;
   font-family: 'FontAwesome';
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*------------------------ WIDGET ------------------------*/
@@ -2212,7 +2217,7 @@ blockquote:before {
 }
 
 .widget-tags ul li a {
-  border: 2px solid #f23849;
+  border: 2px solid var(--primary-color);
   box-sizing: border-box;
   border-radius: 0;
   font-size: 14px;
@@ -2241,7 +2246,7 @@ blockquote:before {
 
 .widget-archive li a:hover,
 .widget-categories li a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .widget-archive li a:before,
@@ -2249,7 +2254,7 @@ blockquote:before {
   content: '\f105';
   font-family: 'FontAwesome';
   margin-right: 10px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /* WIDGET-RECENT-POSTS */
@@ -2262,7 +2267,7 @@ blockquote:before {
 }
 
 .widget-recent-posts li a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .widget-recent-posts li .date {
@@ -2274,7 +2279,7 @@ blockquote:before {
 .widget-recent-posts li .date i {
   margin-right: 8px;
   font-size: 16px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /* WIDGET-INSTAGRAM */
@@ -2304,7 +2309,7 @@ blockquote:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: #f23849;
+  color: var(--primary-color);
   z-index: 2;
   font-weight: 500;
   font-size: 20px;
@@ -2378,8 +2383,8 @@ blockquote:before {
 }
 
 .pagination-item.active a {
-  border-color: #f23849;
-  background-color: #f23849;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .pagination-item.active {
@@ -2387,7 +2392,7 @@ blockquote:before {
 }
 
 .pagination-item:hover a {
-  border-color: #f23849;
+  border-color: var(--primary-color);
 }
 
 /*--------------------- S-SINGLE-NEWS ---------------------*/
@@ -2416,7 +2421,7 @@ blockquote:before {
 .autor-cover .name {
   font-weight: 400;
   font-size: 20px;
-  color: #f23849;
+  color: var(--primary-color);
   margin-bottom: 6px;
   font-family: "Righteous", sans-serif;
 }
@@ -2485,7 +2490,7 @@ blockquote:before {
 }
 
 .navigation-item:hover .title {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*----------------------- REVIEWS -----------------------*/
@@ -2551,7 +2556,7 @@ blockquote:before {
 .review-content .date i {
   font-size: 16px;
   margin-right: 8px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .faq-cover li:not(:last-child) {
@@ -2574,11 +2579,11 @@ blockquote:before {
 }
 
 .review-btn:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .review-btn:hover i {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*----------------- S-RELATED-POSTS -----------------*/
@@ -2634,7 +2639,7 @@ blockquote:before {
   right: 15px;
   z-index: 2;
   text-transform: uppercase;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   text-align: center;
   font-weight: 600;
   min-width: 120px;
@@ -2669,6 +2674,7 @@ blockquote:before {
 
 /*-------------------- S-CONTACTS --------------------*/
 .s-contacts {
+  background: url(../img/bg/black2.jpg);
   padding: 10px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -2686,7 +2692,7 @@ blockquote:before {
 
 .contact-item-left {
   width: 40%;
-  border-right: 2px solid #f23849;
+  border-right: 2px solid var(--primary-color);
 }
 
 .contact-item-left h4 {
@@ -2708,7 +2714,7 @@ blockquote:before {
 }
 
 .contact-item-right a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*-------------------- S-CROSSFIT --------------------*/
@@ -2754,7 +2760,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   transition: .4s ease-in-out;
   pointer-events: none;
 }
@@ -2929,7 +2935,7 @@ blockquote:before {
 .program-item .program-item-back:before {
   content: '';
   position: absolute;
-  border: 5px solid #f23849;
+  border: 5px solid var(--primary-color);
   top: -14px;
   bottom: -14px;
   left: 50%;
@@ -3026,7 +3032,7 @@ blockquote:before {
   /* margin-top: 40px; */
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   transition: .4s ease-in-out;
   pointer-events: none;
 }
@@ -3055,7 +3061,7 @@ blockquote:before {
   margin-top: 40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   transition: .4s ease-in-out;
   pointer-events: none;
 }
@@ -3082,7 +3088,7 @@ blockquote:before {
   transform: translateX(-50%);
   width: 45px;
   height: 4px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
 }
 
 .club-card-item .price-cover .price {
@@ -3143,7 +3149,7 @@ blockquote:before {
 }
 
 .club-cards-lite .club-card-item .price-cover .price span {
-  color: #f23849;
+  color: var(--primary-color);
   font-size: 36px;
   line-height: .75;
   position: relative;
@@ -3165,7 +3171,7 @@ blockquote:before {
 .s-crossfit-banner {
   padding-block: 10px;
   position: relative;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   /* display: flex;
   justify-content: space-between; */
 }
@@ -3374,7 +3380,7 @@ blockquote:before {
 }
 
 .training-schedule-top {
-  border-top: 1px solid #f23849;
+  border-top: 1px solid var(--primary-color);
   background-color: #272a31;
   line-height: 41px;
 }
@@ -3426,7 +3432,7 @@ blockquote:before {
 .training-schedule-table td .date {
   font-weight: 700;
   margin-top: 2px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .training-schedule-table td .name {
@@ -3521,7 +3527,7 @@ blockquote:before {
 }
 
 .about-info-cover .text a {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .about-info-cover .text a:hover {
@@ -3550,7 +3556,7 @@ blockquote:before {
 }
 
 .about-info-cover .social-list a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .about-cont {
@@ -3573,7 +3579,7 @@ blockquote:before {
 }
 
 .about-cont li a {
-  color: #f23849;
+  color: var(--primary-color);
   font-size: 17px;
 }
 
@@ -3599,7 +3605,7 @@ blockquote:before {
   font-family: "Righteous", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  border-right: 2px solid #f23849;
+  border-right: 2px solid var(--primary-color);
   width: 38%;
   padding: 5px 0;
 }
@@ -3669,7 +3675,7 @@ blockquote:before {
 }
 
 .our-trainer-info .name {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .our-trainer-info .prof {
@@ -3751,7 +3757,7 @@ blockquote:before {
   display: block;
   margin: 0 auto 21px;
   font-size: 48px;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .trainer-award-col h3 {
@@ -3846,7 +3852,7 @@ blockquote:before {
 
 .testimonials-slider .slick-dots li:hover,
 .testimonials-slider .slick-dots li.slick-active {
-  background-color: #f23849;
+  background-color: var(--primary-color);
 }
 
 .testimonials-slider .slick-dots li:last-child {
@@ -3880,7 +3886,7 @@ blockquote:before {
 
 .testimonial-slide .name {
   text-transform: uppercase;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .testimonial-slide .prof {
@@ -3899,7 +3905,7 @@ blockquote:before {
 }
 
 .testimonials-border .testimonials-slider {
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   padding: 47px 0;
 }
 
@@ -3946,7 +3952,7 @@ blockquote:before {
   height: calc(100% - 20px);
   width: calc(100% - 40px);
   margin-top: 40px;
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   pointer-events: none;
   transition: .4s ease;
   z-index: 2;
@@ -3992,7 +3998,7 @@ blockquote:before {
 
 .best-trainer-slide .name {
   line-height: 1.2;
-  color: #f23849;
+  color: var(--primary-color);
   padding: 0 40px;
   transition: .4s ease;
   opacity: 0;
@@ -4000,7 +4006,7 @@ blockquote:before {
 
 .best-trainer-slide .surname {
   line-height: 1.2;
-  color: #f23849;
+  color: var(--primary-color);
   padding: 0 40px;
   transition: .4s ease;
   opacity: 0;
@@ -4092,7 +4098,7 @@ blockquote:before {
   line-height: .75;
   font-family: "Righteous", sans-serif;
   position: relative;
-  color: #f23849;
+  color: var(--primary-color);
   padding-bottom: 26px;
 }
 
@@ -4104,7 +4110,7 @@ blockquote:before {
   transform: translate(-50%, 0);
   width: 46px;
   height: 4px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
 }
 
 .about-info-row .about-info-col h3 {
@@ -4145,7 +4151,7 @@ blockquote:before {
 }
 
 .out-trainer-item:hover h3 a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .out-trainer-item:hover p {
@@ -4157,7 +4163,7 @@ blockquote:before {
 }
 
 .out-trainer-item:hover .social-list li a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .out-trainer-img {
@@ -4191,7 +4197,7 @@ blockquote:before {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: #f23849;
+  color: var(--primary-color);
   transition: .25s ease-in;
   font-weight: 500;
 }
@@ -4298,7 +4304,7 @@ blockquote:before {
 #clockdiv .clock-item span {
   display: block;
   font-size: 96px;
-  color: #f23849;
+  color: var(--primary-color);
   line-height: .75;
   margin-bottom: 10px;
 }
@@ -4358,7 +4364,7 @@ blockquote:before {
   right: -15px;
   height: 100%;
   width: calc(100% + 94px);
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   z-index: 1;
   pointer-events: none;
 }
@@ -4423,7 +4429,7 @@ blockquote:before {
 
 .s-fitness-slider .slider-navigation .slick-dots li:hover button,
 .s-fitness-slider .slider-navigation .slick-dots li.slick-active button {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .s-fitness-slider .slider-navigation .slick-dots li button {
@@ -4514,7 +4520,7 @@ blockquote:before {
   top: 0;
   height: 47px;
   width: 4px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   transform: translateY(30%);
   transition: .2s ease-out;
   transition-delay: .8s;
@@ -4523,7 +4529,7 @@ blockquote:before {
 
 .fitness-slide .fitness-slide-cover .title span {
   display: block;
-  color: #f23849;
+  color: var(--primary-color);
   margin-top: 32px;
   transform: translateX(-10%);
   transition: .2s ease-out;
@@ -4660,7 +4666,7 @@ blockquote:before {
 .fitness-program-item-front .fitness-program-item-inner {
   position: relative;
   z-index: 1;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   width: 100%;
@@ -4675,7 +4681,7 @@ blockquote:before {
   bottom: 100%;
   width: 100%;
   height: 30px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   z-index: 2;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
@@ -4703,7 +4709,7 @@ blockquote:before {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   color: #fff;
   text-transform: uppercase;
   padding: 20px;
@@ -4791,7 +4797,7 @@ blockquote:before {
   right: -15px;
   left: -113px;
   height: 100%;
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   pointer-events: none;
 }
 
@@ -4802,7 +4808,7 @@ blockquote:before {
 
 .fitness-banner-right h2 span {
   display: block;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .fitness-banner-right p {
@@ -4812,7 +4818,7 @@ blockquote:before {
 
 .fitness-banner-right p a {
   position: relative;
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .fitness-banner-right p a:before {
@@ -4822,7 +4828,7 @@ blockquote:before {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #f23849;
+  background-color: var(--primary-color);
   transition: .25s ease-in;
 }
 
@@ -4856,7 +4862,7 @@ blockquote:before {
 }
 
 .fitness-post-col .post-item-cover .post-header {
-  background-color: #f23849;
+  background-color: var(--primary-color);
   padding: 42px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -4889,7 +4895,7 @@ blockquote:before {
 }
 
 .fitness-post-col .post-content .title a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 .fitness-post-col .post-footer {
@@ -4928,7 +4934,7 @@ blockquote:before {
 }
 
 .fitness-post-col .post-footer .meta a:hover {
-  color: #f23849;
+  color: var(--primary-color);
 }
 
 /*----------------- S-FITNESS-GALLERY -----------------*/
@@ -4985,7 +4991,7 @@ blockquote:before {
   opacity: 0;
   margin-top: 40px;
   transform: translate(-50%, -50%);
-  border: 7px solid #f23849;
+  border: 7px solid var(--primary-color);
   transition: .4s ease-in-out;
   pointer-events: none;
   z-index: 3;
